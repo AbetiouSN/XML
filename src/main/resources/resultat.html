@@ -1,0 +1,388 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+                    body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                    }
+
+                    center {
+                    margin-top: 20px;
+                    }
+
+                    h2 {
+                    color: #333;
+                    }
+
+                    table {
+                    width: 80%;
+                    border-collapse: collapse;
+                    margin-top: 20px;
+                    }
+
+                    th, td {
+                    padding: 10px;
+                    text-align: left;
+                    }
+
+                    th {
+                    background-color: #333;
+                    color: #fff;
+                    }
+
+                    tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                    }
+
+                    tr:hover {
+                    background-color: #ddd;
+                    cursor: pointer;
+                    }
+                </style>
+        <script>
+                    function redirectToProfile(numero, nom, prenom) {
+                    // Encode the parameters to make sure special characters are handled properly
+                    var encodedNom = encodeURIComponent(nom);
+                    var encodedPrenom = encodeURIComponent(prenom);
+
+                    window.location.href = "profile.html?selectedNumero=" + numero + "&selectedNom=" + encodedNom + "&selectedPrenom=" + encodedPrenom;
+                    }
+                </script>
+    </head>
+    <body>
+        <center>
+            <h2>Liste des &eacute;tudiants G Informatique 2 ENSAT</h2>
+            <table border="1">
+                <tr id="Num&eacute;ro" onclick="redirectToProfile('Num&eacute;ro', 'Nom', 'Pr&eacute;nom')">
+                    <td></td><td>Num&eacute;ro</td><td>Nom</td><td>Pr&eacute;nom</td>
+                </tr>
+                <tr id="20000773" onclick="redirectToProfile('20000773', 'ABETIOU', 'SOFIANE')">
+                    <td>1</td><td>20000773</td><td>ABETIOU</td><td>SOFIANE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19001211" onclick="redirectToProfile('19001211', 'ACHERNAN', 'MOHAMED')">
+                    <td>2</td><td>19001211</td><td>ACHERNAN</td><td>MOHAMED</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19001137" onclick="redirectToProfile('19001137', 'AFOUD', 'HIND')">
+                    <td>3</td><td>19001137</td><td>AFOUD</td><td>HIND</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000734" onclick="redirectToProfile('20000734', 'AIT OUKHADOU', 'SELMA')">
+                    <td>4</td><td>20000734</td><td>AIT OUKHADOU</td><td>SELMA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000761" onclick="redirectToProfile('20000761', 'AKIIRNE', 'AMAL')">
+                    <td>5</td><td>20000761</td><td>AKIIRNE</td><td>AMAL</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19001276" onclick="redirectToProfile('19001276', 'AMHAOUECH', 'WIAM')">
+                    <td>6</td><td>19001276</td><td>AMHAOUECH</td><td>WIAM</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20001244" onclick="redirectToProfile('20001244', 'AMINE', 'TAHA')">
+                    <td>7</td><td>20001244</td><td>AMINE</td><td>TAHA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000493" onclick="redirectToProfile('20000493', 'ARRAB', 'HAFSA')">
+                    <td>8</td><td>20000493</td><td>ARRAB</td><td>HAFSA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20006988" onclick="redirectToProfile('20006988', 'BAJJI', 'AMINE')">
+                    <td>9</td><td>20006988</td><td>BAJJI</td><td>AMINE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20007078" onclick="redirectToProfile('20007078', 'BENAMRI', 'AYMANE')">
+                    <td>10</td><td>20007078</td><td>BENAMRI</td><td>AYMANE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000758" onclick="redirectToProfile('20000758', 'BENATTOU', 'IHSANE')">
+                    <td>11</td><td>20000758</td><td>BENATTOU</td><td>IHSANE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000757" onclick="redirectToProfile('20000757', 'BENATTOU', 'IMANE')">
+                    <td>12</td><td>20000757</td><td>BENATTOU</td><td>IMANE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19002165" onclick="redirectToProfile('19002165', 'BENTOUFILE', 'OUSSAMA')">
+                    <td>13</td><td>19002165</td><td>BENTOUFILE</td><td>OUSSAMA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000730" onclick="redirectToProfile('20000730', 'BOUALI', 'MAROUA')">
+                    <td>14</td><td>20000730</td><td>BOUALI</td><td>MAROUA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20002424" onclick="redirectToProfile('20002424', 'BOUKTAIB', 'SOUFIAN')">
+                    <td>15</td><td>20002424</td><td>BOUKTAIB</td><td>SOUFIAN</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000771" onclick="redirectToProfile('20000771', 'BOULAID', 'SARA')">
+                    <td>16</td><td>20000771</td><td>BOULAID</td><td>SARA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20007025" onclick="redirectToProfile('20007025', 'CHANAA', 'AIMANE')">
+                    <td>17</td><td>20007025</td><td>CHANAA</td><td>AIMANE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20007161" onclick="redirectToProfile('20007161', 'CHATT', 'ANAS')">
+                    <td>18</td><td>20007161</td><td>CHATT</td><td>ANAS</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20004313" onclick="redirectToProfile('20004313', 'DAHRABOU', 'DOHA')">
+                    <td>19</td><td>20004313</td><td>DAHRABOU</td><td>DOHA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20007051" onclick="redirectToProfile('20007051', 'DAOUDI', 'AYA')">
+                    <td>20</td><td>20007051</td><td>DAOUDI</td><td>AYA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20002432" onclick="redirectToProfile('20002432', 'ECHBERAAL', 'ANASS')">
+                    <td>21</td><td>20002432</td><td>ECHBERAAL</td><td>ANASS</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20002251" onclick="redirectToProfile('20002251', 'EL AALOUCH', 'MOHAMMED YASSINE')">
+                    <td>22</td><td>20002251</td><td>EL AALOUCH</td><td>MOHAMMED YASSINE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20002670" onclick="redirectToProfile('20002670', 'EL ASSIRI', 'AHLAM')">
+                    <td>23</td><td>20002670</td><td>EL ASSIRI</td><td>AHLAM</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000742" onclick="redirectToProfile('20000742', 'EL AZOUAN', 'AYA')">
+                    <td>24</td><td>20000742</td><td>EL AZOUAN</td><td>AYA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000741" onclick="redirectToProfile('20000741', 'EL BAGHDADI', 'NADA')">
+                    <td>25</td><td>20000741</td><td>EL BAGHDADI</td><td>NADA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000775" onclick="redirectToProfile('20000775', 'EL BARAKA', 'NOUHAILA')">
+                    <td>26</td><td>20000775</td><td>EL BARAKA</td><td>NOUHAILA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20007042" onclick="redirectToProfile('20007042', 'EL FERCHOUNI', 'SOUKAYNA')">
+                    <td>27</td><td>20007042</td><td>EL FERCHOUNI</td><td>SOUKAYNA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19001439" onclick="redirectToProfile('19001439', 'EL FICH', 'RIHAB')">
+                    <td>28</td><td>19001439</td><td>EL FICH</td><td>RIHAB</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19002131" onclick="redirectToProfile('19002131', 'EL GAID', 'MUSTAPHA')">
+                    <td>29</td><td>19002131</td><td>EL GAID</td><td>MUSTAPHA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000780" onclick="redirectToProfile('20000780', 'EL HABTI', 'NAJOUA')">
+                    <td>30</td><td>20000780</td><td>EL HABTI</td><td>NAJOUA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20003925" onclick="redirectToProfile('20003925', 'EL HADDAD', 'MOHAMED')">
+                    <td>31</td><td>20003925</td><td>EL HADDAD</td><td>MOHAMED</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19006658" onclick="redirectToProfile('19006658', 'EL HARIRI', 'KENZA')">
+                    <td>32</td><td>19006658</td><td>EL HARIRI</td><td>KENZA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000755" onclick="redirectToProfile('20000755', 'EL HARRACHY', 'ABDERRAHMANE')">
+                    <td>33</td><td>20000755</td><td>EL HARRACHY</td><td>ABDERRAHMANE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000716" onclick="redirectToProfile('20000716', 'EL MAFTOUHI', 'BILAL')">
+                    <td>34</td><td>20000716</td><td>EL MAFTOUHI</td><td>BILAL</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="18008815" onclick="redirectToProfile('18008815', 'EL MAIMOUNI', 'MOHAMED AMINE')">
+                    <td>35</td><td>18008815</td><td>EL MAIMOUNI</td><td>MOHAMED AMINE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20006989" onclick="redirectToProfile('20006989', 'EL MOUMOUHI', 'HOUDA')">
+                    <td>36</td><td>20006989</td><td>EL MOUMOUHI</td><td>HOUDA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20007067" onclick="redirectToProfile('20007067', 'EL OMARI', 'IMANE')">
+                    <td>37</td><td>20007067</td><td>EL OMARI</td><td>IMANE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19001413" onclick="redirectToProfile('19001413', 'EL YAMLAHI', 'AICHA')">
+                    <td>38</td><td>19001413</td><td>EL YAMLAHI</td><td>AICHA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="17004026" onclick="redirectToProfile('17004026', 'EL YAZGHI', 'MARYEM')">
+                    <td>39</td><td>17004026</td><td>EL YAZGHI</td><td>MARYEM</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000759" onclick="redirectToProfile('20000759', 'ENNAJARI', 'OUMAIMA')">
+                    <td>40</td><td>20000759</td><td>ENNAJARI</td><td>OUMAIMA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19005693" onclick="redirectToProfile('19005693', 'ESSAIH', 'ASMAE')">
+                    <td>41</td><td>19005693</td><td>ESSAIH</td><td>ASMAE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19005680" onclick="redirectToProfile('19005680', 'FAROUK', 'ZAKARIA')">
+                    <td>42</td><td>19005680</td><td>FAROUK</td><td>ZAKARIA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000777" onclick="redirectToProfile('20000777', 'GLIOUAL', 'YASSINE')">
+                    <td>43</td><td>20000777</td><td>GLIOUAL</td><td>YASSINE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19005656" onclick="redirectToProfile('19005656', 'GOMAIRI', 'HAMZA')">
+                    <td>44</td><td>19005656</td><td>GOMAIRI</td><td>HAMZA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19006584" onclick="redirectToProfile('19006584', 'HAJI', 'OTMANE')">
+                    <td>45</td><td>19006584</td><td>HAJI</td><td>OTMANE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20002433" onclick="redirectToProfile('20002433', 'HAMDAN', 'KARIMA')">
+                    <td>46</td><td>20002433</td><td>HAMDAN</td><td>KARIMA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20002532" onclick="redirectToProfile('20002532', 'HARRAK', 'YOUSSEF')">
+                    <td>47</td><td>20002532</td><td>HARRAK</td><td>YOUSSEF</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000763" onclick="redirectToProfile('20000763', 'HAYAOUI', 'MOUAD')">
+                    <td>48</td><td>20000763</td><td>HAYAOUI</td><td>MOUAD</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000740" onclick="redirectToProfile('20000740', 'HIMMI', 'HAJAR')">
+                    <td>49</td><td>20000740</td><td>HIMMI</td><td>HAJAR</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20002137" onclick="redirectToProfile('20002137', 'IDRISSI', 'YASSINE')">
+                    <td>50</td><td>20002137</td><td>IDRISSI</td><td>YASSINE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20006985" onclick="redirectToProfile('20006985', 'JAADA', 'ZAHAIRA')">
+                    <td>51</td><td>20006985</td><td>JAADA</td><td>ZAHAIRA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20002554" onclick="redirectToProfile('20002554', 'KACHAR', 'NABIL')">
+                    <td>52</td><td>20002554</td><td>KACHAR</td><td>NABIL</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20009742" onclick="redirectToProfile('20009742', 'KDIDAR', 'HAJAR')">
+                    <td>53</td><td>20009742</td><td>KDIDAR</td><td>HAJAR</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19006706" onclick="redirectToProfile('19006706', 'KEFFAOUI', 'NOHA')">
+                    <td>54</td><td>19006706</td><td>KEFFAOUI</td><td>NOHA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20006930" onclick="redirectToProfile('20006930', 'KHALLOUFI', 'AYA')">
+                    <td>55</td><td>20006930</td><td>KHALLOUFI</td><td>AYA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000754" onclick="redirectToProfile('20000754', 'LAABADI', 'HOUDA')">
+                    <td>56</td><td>20000754</td><td>LAABADI</td><td>HOUDA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19002804" onclick="redirectToProfile('19002804', 'LAHOIENI', 'ABDERRAHIM')">
+                    <td>57</td><td>19002804</td><td>LAHOIENI</td><td>ABDERRAHIM</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19001375" onclick="redirectToProfile('19001375', 'LAKRAMAT', 'HASNAE')">
+                    <td>58</td><td>19001375</td><td>LAKRAMAT</td><td>HASNAE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000731" onclick="redirectToProfile('20000731', 'MOUNTASSIR', 'REDA')">
+                    <td>59</td><td>20000731</td><td>MOUNTASSIR</td><td>REDA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000513" onclick="redirectToProfile('20000513', 'NAYMA', 'OMAYMA')">
+                    <td>60</td><td>20000513</td><td>NAYMA</td><td>OMAYMA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20007695" onclick="redirectToProfile('20007695', 'RANBOUK', 'LAMIAE')">
+                    <td>61</td><td>20007695</td><td>RANBOUK</td><td>LAMIAE</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="19006284" onclick="redirectToProfile('19006284', 'RAYES', 'ABDELKOUDOUS')">
+                    <td>62</td><td>19006284</td><td>RAYES</td><td>ABDELKOUDOUS</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000721" onclick="redirectToProfile('20000721', 'SAMADI', 'IMAD')">
+                    <td>63</td><td>20000721</td><td>SAMADI</td><td>IMAD</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20002123" onclick="redirectToProfile('20002123', 'ZAOUI', 'OUSSAMA')">
+                    <td>64</td><td>20002123</td><td>ZAOUI</td><td>OUSSAMA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+                <tr id="20000491" onclick="redirectToProfile('20000491', 'ZOUAKI', 'MARIA')">
+                    <td>65</td><td>20000491</td><td>ZOUAKI</td><td>MARIA</td><td>
+                                    Voir profil
+                                </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

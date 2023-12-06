@@ -1,0 +1,6 @@
+<!ELEMENT personnes (personne+)>
+        <!ELEMENT personne (numero, nom, prenom)>
+
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT prenom (#PCDATA)>
+        <!ELEMENT numero (#PCDATA)>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil de l'ETUDIANT </title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        center {
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #profileNumero, #profileNom, #profilePrenom {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <h2>Profil de l'ETUDIANT </h2>
+    <table>
+        <tr>
+            <th>Numéro</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+        </tr>
+        <tr>
+            <td id="profileNumero"></td>
+            <td id="profileNom"></td>
+            <td id="profilePrenom"></td>
+        </tr>
+    </table>
+</center>
+
+<script>
+    // Fonction pour extraire les paramètres de l'URL
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    // Fonction pour charger le profil en fonction des paramètres de l'URL
+    function loadProfile() {
+        var selectedNumero = getParameterByName('selectedNumero');
+        var selectedNom = getParameterByName('selectedNom');
+        var selectedPrenom = getParameterByName('selectedPrenom');
+
+        document.getElementById('profileNumero').innerText = selectedNumero;
+        document.getElementById('profileNom').innerText = selectedNom;
+        document.getElementById('profilePrenom').innerText = selectedPrenom;
+    }
+
+    // Appeler la fonction de chargement du profil lorsque la page est chargée
+    window.onload = loadProfile;
+</script>
+</body>
+</html>
