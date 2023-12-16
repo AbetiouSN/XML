@@ -1,6 +1,8 @@
 <!ELEMENT personnes (personne+)>
-        <!ELEMENT personne (numero, nom, prenom)>
+        <!ELEMENT personne (numero, nom, prenom ,filiere,date_Inscreption)>
 
         <!ELEMENT nom (#PCDATA)>
         <!ELEMENT prenom (#PCDATA)>
         <!ELEMENT numero (#PCDATA)>
+        <!ELEMENT filiere (#PCDATA)>
+        <!ELEMENT date_Inscreption (#PCDATA)>

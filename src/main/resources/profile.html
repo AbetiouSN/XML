@@ -42,24 +42,155 @@
             font-weight: bold;
             color: #333;
         }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px; /* ou une autre largeur selon vos besoins */
+        }
+
+        .container-fluid {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        img.logo {
+            max-width: 100px;
+            height: auto;
+            margin-right: 5px;
+            border-radius: 15%;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding-right: 30px;
+            text-align: center;
+        // position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        img.footer-img {
+            width: 300px; /* Taille de l'image */
+            height: auto;
+        }
+
+        .footer-text {
+            /*flex-grow: 1; *//* Permet au texte de remplir l'espace disponible à droite */
+            text-align: right;
+            margin-right: 20px;
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
     </style>
 </head>
 <body>
-<center>
-    <h2>Profil de l'ETUDIANT </h2>
-    <table>
-        <tr>
-            <th>Numéro</th>
-            <th>Nom</th>
-            <th>Prénom</th>
-        </tr>
-        <tr>
-            <td id="profileNumero"></td>
-            <td id="profileNom"></td>
-            <td id="profilePrenom"></td>
-        </tr>
-    </table>
-</center>
+<div class="container">
+
+        <header>
+            <img class="logo" src="ensat.png" alt="Logo"/>
+            <h1>ENSA Tanger </h1>
+        </header>
+    <h2>Profil de l'ETUDIANT   </h2>
+        <div class="profile-header">
+            <table>
+                <tr>
+                    <td><h4 id="profileNom"></h4></td>
+                    <td><h4 id="profilePrenom"></h4></td>
+                </tr>
+            </table>
+            <img src="sofiane.png" alt="Image du profil">
+
+        </div>
+        <table>
+            <tr>
+                <th>Numéro</th>
+                <td id="profileNumero"></td>
+            </tr>
+            <tr>
+                <th>Niveau</th>
+                <td>CI2</td>
+            </tr>
+            <tr>
+                <th>Filiere </th>
+                <td>Genie Informatique</td>
+            </tr>
+<!--            <tr>-->
+<!--                <th>Nom</th>-->
+<!--                <td id="profileFiliere"></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <th>Prénom</th>-->
+<!--                <td id="selectedDateInscrption"></td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+                <th>Numéro de téléphone</th>
+                <td id="profileTelephone">+212 698 571 217</td>
+            </tr>
+            <tr>
+                <th>Adresse e-mail</th>
+                <td id="profileEmail">sofianeabetiou@gmail.com</td>
+            </tr>
+            <tr>
+                <th>Date de naissance</th>
+                <td id="profileDateNaissance">01-01-2000</td>
+            </tr>
+        </table>
+        <br/>
+        <br/>
+        <footer class="container">
+        <img class="footer-img" src="images (2).png" alt="Description de l'image du footer"/>
+        <div class="footer-text">
+            <p>Uneversite Abdelmalik Essaadi</p>
+            <p>Contactez-nous : <a href="mailto:contact@universite.com">contact@universite.com</a></p>
+            <p>Téléphone : +212 698 571 217</p>
+            <address>Boukhalef Tanger Morocco</address>
+            <p>Développeurs : Sofiane ABETIOU and  Hajar KDIDAR</p>
+        </div>
+    </footer>
+
+</div>
 
 <script>
     // Fonction pour extraire les paramètres de l'URL
@@ -78,10 +209,15 @@
         var selectedNumero = getParameterByName('selectedNumero');
         var selectedNom = getParameterByName('selectedNom');
         var selectedPrenom = getParameterByName('selectedPrenom');
+        var selectedDateInscrption = getParameterByName('selectedDateInscrption');
+        var selectedFiliere = getParameterByName('selectedFiliere');
 
         document.getElementById('profileNumero').innerText = selectedNumero;
         document.getElementById('profileNom').innerText = selectedNom;
         document.getElementById('profilePrenom').innerText = selectedPrenom;
+        document.getElementById('profileFiliere').innerText = selectedFiliere;
+        document.getElementById('selectedDateInscrption').innerText = selectedDateInscrption;
+
     }
 
     // Appeler la fonction de chargement du profil lorsque la page est chargée

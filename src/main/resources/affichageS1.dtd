@@ -1,0 +1,13 @@
+<!ELEMENT etudiants (etudiant+)>
+        <!ELEMENT etudiant (numero, nom, prenom, ginf21, ginf22, ginf23, ginf24, ginf25, ginf26, moyenne)>
+
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT prenom (#PCDATA)>
+        <!ELEMENT numero (#PCDATA)>
+        <!ELEMENT ginf21 (#PCDATA)>
+        <!ELEMENT ginf22 (#PCDATA)>
+        <!ELEMENT ginf23 (#PCDATA)>
+        <!ELEMENT ginf24 (#PCDATA)>
+        <!ELEMENT ginf25 (#PCDATA)>
+        <!ELEMENT ginf26 (#PCDATA)>
+        <!ELEMENT moyenne (#PCDATA)>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE page SYSTEM "AdminInterface.dtd">
+<page>
+    <navbar>
+        <logo>lien_vers_l_image</logo>
+        <title>ENSA Tanger</title>
+        <buttons>
+            <button>voir_liste_etudiants</button>
+            <button>voir_releves_notes</button>
+            <button>voir_liste_profs</button>
+        </buttons>
+    </navbar>
+<!--    <content>Contenu de la page jgjhhhhh</content>-->
+    <footer>
+        <university-name>Uneversite Abdelmalik Essaadi</university-name>
+        <phone>+212 698 571 217</phone>
+        <developers>Sofiane ABETIOU and  Hajar KDIDAR </developers>
+        <contact-email>contact@universite.com</contact-email>
+        <address>Boukhalef Tanger Morocco</address>
+    </footer>
+</page>

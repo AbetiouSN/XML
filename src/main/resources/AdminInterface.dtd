@@ -1,0 +1,13 @@
+<!ELEMENT page (navbar,footer)>
+        <!ELEMENT navbar (logo, title, buttons)>
+        <!ELEMENT logo (#PCDATA)>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT buttons (button+)>
+        <!ELEMENT button (#PCDATA)>
+<!--        <!ELEMENT content (#PCDATA)>-->
+        <!ELEMENT footer (university-name, phone, developers, contact-email, address)>
+        <!ELEMENT university-name (#PCDATA)>
+        <!ELEMENT phone (#PCDATA)>
+        <!ELEMENT developers (#PCDATA)>
+        <!ELEMENT contact-email (#PCDATA)>
+        <!ELEMENT address (#PCDATA)>

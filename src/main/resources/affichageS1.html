@@ -1,0 +1,374 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+                    body {
+                    font-family: 'Arial', sans-serif;
+                    background-color: #f4f4f4;
+                    margin: 0;
+                    padding: 0;
+                    }
+
+                    .container {
+                    margin: 0 auto;
+                    max-width: 1200px; /* ou une autre largeur selon vos besoins */
+                    }
+
+                    .container-fluid {
+                    margin: 0;
+                    padding: 0;
+                    }
+
+                    header {
+                    background-color: #007BFF;
+                    color: #fff;
+                    padding: 20px;
+                    text-align: center;
+                    }
+
+                    img.logo {
+                    max-width: 100px;
+                    height: auto;
+                    margin-right: 5px;
+                    border-radius: 15%;
+                    }
+
+                    center {
+                    margin-top: 20px;
+                    }
+
+                    h2 {
+                    color: #333;
+                    }
+
+                    table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 20px;
+                    }
+
+                    th, td {
+                    padding: 10px;
+                    text-align: left;
+                    }
+
+                    th {
+                    background-color: #333;
+                    color: #fff;
+                    }
+
+                    tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                    }
+
+                    tr:hover {
+                    background-color: #ddd;
+                    cursor: pointer;
+                    }
+                    footer {
+                    background-color: #343a40;
+                    color: #fff;
+                    padding-right: 30px;
+                    text-align: center;
+                    // position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    }
+
+                    img.footer-img {
+                    width: 300px; /* Taille de l'image */
+                    height: auto;
+                    }
+
+                    .footer-text {
+                    /*flex-grow: 1; *//* Permet au texte de remplir l'espace disponible à droite */
+                    text-align: right;
+                    margin-right: 20px;
+                    }
+
+                </style>
+        <script>
+                    function redirectToProfile(numero, nom, prenom) {
+                    // Encode the parameters to make sure special characters are handled properly
+                    var encodedNom = encodeURIComponent(nom);
+                    var encodedPrenom = encodeURIComponent(prenom);
+
+                    window.location.href = "profile.html?selectedNumero=" + numero + "&selectedNom=" + encodedNom + "&selectedPrenom=" + encodedPrenom;
+                    }
+                </script>
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <header>
+                    <img class="logo" src="ensat.png" alt="Logo">
+                    <h1>ENSA Tanger</h1>
+                </header>
+                <h2> L'affichage de semestre 1 dla classe GINF2 </h2>
+                <table border="1">
+                    <tr id="Num&eacute;ro" onclick="redirectToProfile('Num&eacute;ro', 'Nom', 'Pr&eacute;nom', 'GINF21', 'GINF22', 'GINF23', 'GINF24', 'GINF25', 'GINF26', 'MOYENNE')">
+                        <td></td><td>Num&eacute;ro</td><td>Nom</td><td>Pr&eacute;nom</td><td>GINF21</td><td>GINF22</td><td>GINF23</td><td>GINF24</td><td>GINF25</td><td>GINF26</td><td>MOYENNE</td>
+                    </tr>
+                    <tr id="20000773" onclick="redirectToProfile('20000773', 'ABETIOU', 'SOFIANE', '12', '13', '14', '11', '10', '13', '12')">
+                        <td>1</td><td>20000773</td><td>ABETIOU</td><td>SOFIANE</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19001211" onclick="redirectToProfile('19001211', 'ACHERNAN', 'MOHAMED', '13', '14', '14', '16', '18', '13', '13')">
+                        <td>2</td><td>19001211</td><td>ACHERNAN</td><td>MOHAMED</td><td>13</td><td>14</td><td>14</td><td>16</td><td>18</td><td>13</td><td style="background-color: blue">13</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19001137" onclick="redirectToProfile('19001137', 'AFOUD', 'HIND', '12', '13', '14', '11', '10', '13', '10')">
+                        <td>3</td><td>19001137</td><td>AFOUD</td><td>HIND</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">10</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000734" onclick="redirectToProfile('20000734', 'AIT OUKHADOU', 'SELMA', '12', '13', '14', '11', '10', '13', '7')">
+                        <td>4</td><td>20000734</td><td>AIT OUKHADOU</td><td>SELMA</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: red">7</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000761" onclick="redirectToProfile('20000761', 'AKIIRNE', 'AMAL', '12', '9', '14', '11', '13', '13', '8')">
+                        <td>5</td><td>20000761</td><td>AKIIRNE</td><td>AMAL</td><td>12</td><td>9</td><td>14</td><td>11</td><td>13</td><td>13</td><td style="background-color: red">8</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19001276" onclick="redirectToProfile('19001276', 'AMHAOUECH', 'WIAM', '12', '13', '14', '11', '10', '13', '12')">
+                        <td>6</td><td>19001276</td><td>AMHAOUECH</td><td>WIAM</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20001244" onclick="redirectToProfile('20001244', 'AMINE', 'TAHA', '17', '13', '4', '8', '11', '13', '15')">
+                        <td>7</td><td>20001244</td><td>AMINE</td><td>TAHA</td><td>17</td><td>13</td><td>4</td><td>8</td><td>11</td><td>13</td><td style="background-color: blue">15</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000493" onclick="redirectToProfile('20000493', 'ARRAB', 'HAFSA', '11', '13', '14', '11', '10', '11', '12')">
+                        <td>8</td><td>20000493</td><td>ARRAB</td><td>HAFSA</td><td>11</td><td>13</td><td>14</td><td>11</td><td>10</td><td>11</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20006988" onclick="redirectToProfile('20006988', 'BAJJI', 'AMINE', '16', '14', '5', '12', '10', '14', '12')">
+                        <td>9</td><td>20006988</td><td>BAJJI</td><td>AMINE</td><td>16</td><td>14</td><td>5</td><td>12</td><td>10</td><td>14</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20007078" onclick="redirectToProfile('20007078', 'BENAMRI', 'AYMANE', '12', '13', '14', '14', '13', '13', '12')">
+                        <td>10</td><td>20007078</td><td>BENAMRI</td><td>AYMANE</td><td>12</td><td>13</td><td>14</td><td>14</td><td>13</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000758" onclick="redirectToProfile('20000758', 'BENATTOU', 'IHSANE', '12', '13', '14', '11', '10', '13', '12')">
+                        <td>11</td><td>20000758</td><td>BENATTOU</td><td>IHSANE</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000757" onclick="redirectToProfile('20000757', 'BENATTOU', 'IMANE', '12', '13', '14', '10', '10', '12', '12')">
+                        <td>12</td><td>20000757</td><td>BENATTOU</td><td>IMANE</td><td>12</td><td>13</td><td>14</td><td>10</td><td>10</td><td>12</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19002165" onclick="redirectToProfile('19002165', 'BENTOUFILE', 'OUSSAMA', '12', '13', '14', '11', '16', '13', '12')">
+                        <td>13</td><td>19002165</td><td>BENTOUFILE</td><td>OUSSAMA</td><td>12</td><td>13</td><td>14</td><td>11</td><td>16</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000730" onclick="redirectToProfile('20000730', 'BOUALI', 'MAROUA', '12', '13', '14', '11', '10', '12', '12')">
+                        <td>14</td><td>20000730</td><td>BOUALI</td><td>MAROUA</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>12</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20002424" onclick="redirectToProfile('20002424', 'BOUKTAIB', 'SOUFIAN', '16', '5', '14', '11', '10', '15', '12')">
+                        <td>15</td><td>20002424</td><td>BOUKTAIB</td><td>SOUFIAN</td><td>16</td><td>5</td><td>14</td><td>11</td><td>10</td><td>15</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000771" onclick="redirectToProfile('20000771', 'BOULAID', 'SARA', '10', '13', '15', '4', '12', '16', '12')">
+                        <td>16</td><td>20000771</td><td>BOULAID</td><td>SARA</td><td>10</td><td>13</td><td>15</td><td>4</td><td>12</td><td>16</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20007025" onclick="redirectToProfile('20007025', 'CHANAA', 'AIMANE', '12', '13', '14', '11', '10', '18', '12')">
+                        <td>17</td><td>20007025</td><td>CHANAA</td><td>AIMANE</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>18</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20007161" onclick="redirectToProfile('20007161', 'CHATT', 'ANAS', '13', '13', '14', '11', '10', '13', '12')">
+                        <td>18</td><td>20007161</td><td>CHATT</td><td>ANAS</td><td>13</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20004313" onclick="redirectToProfile('20004313', 'DAHRABOU', 'DOHA', '13', '10', '15', '10', '11', '13', '12')">
+                        <td>19</td><td>20004313</td><td>DAHRABOU</td><td>DOHA</td><td>13</td><td>10</td><td>15</td><td>10</td><td>11</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20007051" onclick="redirectToProfile('20007051', 'DAOUDI', 'AYA', '12', '13', '14', '11', '10', '13', '12')">
+                        <td>20</td><td>20007051</td><td>DAOUDI</td><td>AYA</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20002432" onclick="redirectToProfile('20002432', 'ECHBERAAL', 'ANASS', '12', '13', '14', '11', '10', '13', '5')">
+                        <td>21</td><td>20002432</td><td>ECHBERAAL</td><td>ANASS</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: red">5</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20002251" onclick="redirectToProfile('20002251', 'EL AALOUCH', 'MOHAMMED YASSINE', '16', '13', '14', '11', '10', '13', '12')">
+                        <td>22</td><td>20002251</td><td>EL AALOUCH</td><td>MOHAMMED YASSINE</td><td>16</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20002670" onclick="redirectToProfile('20002670', 'EL ASSIRI', 'AHLAM', '12', '13', '14', '11', '10', '13', '12')">
+                        <td>23</td><td>20002670</td><td>EL ASSIRI</td><td>AHLAM</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000742" onclick="redirectToProfile('20000742', 'EL AZOUAN', 'AYA', '12', '13', '14', '11', '10', '13', '12')">
+                        <td>24</td><td>20000742</td><td>EL AZOUAN</td><td>AYA</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000741" onclick="redirectToProfile('20000741', 'EL BAGHDADI', 'NADA', '19', '13', '5', '11', '12', '17', '12')">
+                        <td>25</td><td>20000741</td><td>EL BAGHDADI</td><td>NADA</td><td>19</td><td>13</td><td>5</td><td>11</td><td>12</td><td>17</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000775" onclick="redirectToProfile('20000775', 'EL BARAKA', 'NOUHAILA', '12', '2', '14', '11', '10', '13', '12')">
+                        <td>26</td><td>20000775</td><td>EL BARAKA</td><td>NOUHAILA</td><td>12</td><td>2</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20007042" onclick="redirectToProfile('20007042', 'EL FERCHOUNI', 'SOUKAYNA', '12', '14', '14', '11', '10', '13', '12')">
+                        <td>27</td><td>20007042</td><td>EL FERCHOUNI</td><td>SOUKAYNA</td><td>12</td><td>14</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19001439" onclick="redirectToProfile('19001439', 'EL FICH', 'RIHAB', '12', '11', '14', '11', '10', '13', '12')">
+                        <td>28</td><td>19001439</td><td>EL FICH</td><td>RIHAB</td><td>12</td><td>11</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19002131" onclick="redirectToProfile('19002131', 'EL GAID', 'MUSTAPHA', '12', '17', '14', '11', '10', '13', '12')">
+                        <td>29</td><td>19002131</td><td>EL GAID</td><td>MUSTAPHA</td><td>12</td><td>17</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000780" onclick="redirectToProfile('20000780', 'EL HABTI', 'NAJOUA', '12', '15', '14', '11', '10', '13', '12')">
+                        <td>30</td><td>20000780</td><td>EL HABTI</td><td>NAJOUA</td><td>12</td><td>15</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20003925" onclick="redirectToProfile('20003925', 'EL HADDAD', 'MOHAMED', '12', '11', '14', '11', '10', '13', '12')">
+                        <td>31</td><td>20003925</td><td>EL HADDAD</td><td>MOHAMED</td><td>12</td><td>11</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19006658" onclick="redirectToProfile('19006658', 'EL HARIRI', 'KENZA', '12', '13', '14', '11', '10', '13', '12')">
+                        <td>32</td><td>19006658</td><td>EL HARIRI</td><td>KENZA</td><td>12</td><td>13</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000755" onclick="redirectToProfile('20000755', 'EL HARRACHY', 'ABDERRAHMANE', '12', '14', '14', '11', '10', '13', '12')">
+                        <td>33</td><td>20000755</td><td>EL HARRACHY</td><td>ABDERRAHMANE</td><td>12</td><td>14</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000716" onclick="redirectToProfile('20000716', 'EL MAFTOUHI', 'BILAL', '12', '12', '14', '11', '10', '13', '12')">
+                        <td>34</td><td>20000716</td><td>EL MAFTOUHI</td><td>BILAL</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="18008815" onclick="redirectToProfile('18008815', 'EL MAIMOUNI', 'MOHAMED AMINE', '12', '12', '14', '11', '10', '13', '12')">
+                        <td>35</td><td>18008815</td><td>EL MAIMOUNI</td><td>MOHAMED AMINE</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20006989" onclick="redirectToProfile('20006989', 'EL MOUMOUHI', 'HOUDA', '12', '12', '14', '11', '10', '13', '11')">
+                        <td>36</td><td>20006989</td><td>EL MOUMOUHI</td><td>HOUDA</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">11</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20007067" onclick="redirectToProfile('20007067', 'EL OMARI', 'IMANE', '12', '12', '14', '11', '10', '13', '12.3')">
+                        <td>37</td><td>20007067</td><td>EL OMARI</td><td>IMANE</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: blue">12.3</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19001413" onclick="redirectToProfile('19001413', 'EL YAMLAHI', 'AICHA', '12', '12', '14', '11', '10', '13', '12')">
+                        <td>38</td><td>19001413</td><td>EL YAMLAHI</td><td>AICHA</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="17004026" onclick="redirectToProfile('17004026', 'EL YAZGHI', 'MARYEM', '12', '12', '14', '11', '10', '13', '12')">
+                        <td>39</td><td>17004026</td><td>EL YAZGHI</td><td>MARYEM</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000759" onclick="redirectToProfile('20000759', 'ENNAJARI', 'OUMAIMA', '12', '12', '14', '11', '10', '13', '9')">
+                        <td>40</td><td>20000759</td><td>ENNAJARI</td><td>OUMAIMA</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">9</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19005693" onclick="redirectToProfile('19005693', 'ESSAIH', 'ASMAE', '12', '12', '14', '11', '10', '13', '12')">
+                        <td>41</td><td>19005693</td><td>ESSAIH</td><td>ASMAE</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19005680" onclick="redirectToProfile('19005680', 'FAROUK', 'ZAKARIA', '12', '12', '14', '11', '10', '13', '12')">
+                        <td>42</td><td>19005680</td><td>FAROUK</td><td>ZAKARIA</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000777" onclick="redirectToProfile('20000777', 'GLIOUAL', 'YASSINE', '12', '12', '14', '11', '10', '13', '12')">
+                        <td>43</td><td>20000777</td><td>GLIOUAL</td><td>YASSINE</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19005656" onclick="redirectToProfile('19005656', 'GOMAIRI', 'HAMZA', '12', '12', '14', '11', '10', '13', '12')">
+                        <td>44</td><td>19005656</td><td>GOMAIRI</td><td>HAMZA</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="19006584" onclick="redirectToProfile('19006584', 'HAJI', 'OTMANE', '12', '12', '14', '11', '10', '13', '12')">
+                        <td>45</td><td>19006584</td><td>HAJI</td><td>OTMANE</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20002433" onclick="redirectToProfile('20002433', 'HAMDAN', 'KARIMA', '12', '12', '14', '11', '10', '13', '12')">
+                        <td>46</td><td>20002433</td><td>HAMDAN</td><td>KARIMA</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20002532" onclick="redirectToProfile('20002532', 'HARRAK', 'YOUSSEF', '12', '12', '14', '11', '10', '13', '12')">
+                        <td>47</td><td>20002532</td><td>HARRAK</td><td>YOUSSEF</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>13</td><td style="background-color: green">12</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                    <tr id="20000763" onclick="redirectToProfile('20000763', 'HAYAOUI', 'MOUAD', '12', '12', '14', '11', '10', '14', '15')">
+                        <td>48</td><td>20000763</td><td>HAYAOUI</td><td>MOUAD</td><td>12</td><td>12</td><td>14</td><td>11</td><td>10</td><td>14</td><td style="background-color: blue">15</td><td style="background-color: #f4f4f4">
+                                             Voir profil
+                                         </td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <footer class="container">
+                    <img class="footer-img" src="images (2).png" alt="Description de l'image du footer">
+                    <div class="footer-text">
+                        <p>Uneversite Abdelmalik Essaadi</p>
+                        <p>
+                            Contactez-nous : <a href="mailto:contact@universite.com">contact@universite.com</a>
+                        </p>
+                        <p>T&eacute;l&eacute;phone : +212 698 571 217</p>
+                        <address>Boukhalef Tanger Morocco</address>
+                        <p>D&eacute;veloppeurs : Sofiane ABETIOU and  Hajar KDIDAR</p>
+                    </div>
+                </footer>
+            </center>
+        </div>
+    </body>
+</html>
